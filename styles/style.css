@@ -17,7 +17,11 @@
   font-size: 18px;
   font-weight: 400;
   box-sizing: border-box;
+  background-attachment: fixed;
+}
 
+.header {
+  position: fixed;
 }
 
 .header_title {
@@ -91,6 +95,10 @@
   line-height: 23.4px; /* 130% */
 }
 
-.pictures{
+.pictures {
   display: grid;
+}
+
+.footer {
+  position: fixed;
 }
