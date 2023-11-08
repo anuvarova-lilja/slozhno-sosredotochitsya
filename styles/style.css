@@ -1,5 +1,96 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+:root {
+  --main-font: 'IBM Plex mono', sans-serif;
+  /* --second- */
+  /* --accent-font:; */
+  --text-color: rgba(241, 178, 206, 1);
+  --accent-color: rgba(0, 0, 40, 1);
 
+}
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url("/images/cover-image-dark.png");
+  background-size: cover;
+  color: var( --text-color);
+  overflow-x: hidden;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 400;
+  box-sizing: border-box;
+
+}
+
+.header_title {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+  line-height: 82.5%; /* 95.7px */
+  font-weight: 700;
+}
+
+.resume {
+  background-color: var(--title-decor);
+  color: var(--second-text-color);
+}
+
+.section_heading {
+  background-color: #FF0070;
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.heading {
+  color: #FF0070;
+  font-size: 18px;
+  line-height: 23.4px; /* 130% */
+  font-weight: 700;
+}
+
+.why {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.what {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr; */
+
+}
+
+.what_section {
+  display: flex;
+  gap: 20px;
+}
+
+.how-to {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* display: flex;
+  align-items: baseline; */
+  grid-template-columns: 1fr 2fr;
+  /* gap: 20px; */
+}
+
+/* .how-to_section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+} */
+
+.subtitle {
+  background-color: #FF0070;
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+}
+
+.pictures{
+  display: grid;
 }
