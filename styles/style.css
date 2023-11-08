@@ -21,7 +21,7 @@
 }
 
 .header {
-  position: fixed;
+  height: 100vh;
 }
 
 .header_title {
@@ -97,8 +97,12 @@
 
 .pictures {
   display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  /* grid-template-rows: repeat(auto-fit, 1fr); */
+  gap: 20px;
+  grid-auto-flow: dense;
 }
 
 .footer {
-  position: fixed;
+  height: 100vh;
 }
