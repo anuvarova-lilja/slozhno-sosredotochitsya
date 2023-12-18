@@ -1,108 +1,162 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 :root {
   --main-font: 'IBM Plex mono', sans-serif;
-  /* --second- */
-  /* --accent-font:; */
-  --text-color: rgba(241, 178, 206, 1);
-  --accent-color: rgba(0, 0, 40, 1);
+  --accent-color: #ff0070;
+  --main-bg-color: #00183f;
+  --main-text-color: #f1b2ce;
+  --nav-color: #ff0070;
+  --main-heading-color: #00183f;
+  --section-heading-color: #ff0070;
+  --logo-color: #db00ff;
 
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-inline-size: 375px;
+  margin: 0;
+  padding: 20px;
   background-image: url("/images/cover-image-dark.png");
   background-size: cover;
-  color: var( --text-color);
+  color: var(--main-text-color);
   overflow-x: hidden;
-  font-family: var(--main-font);
   font-size: 18px;
   font-weight: 400;
   box-sizing: border-box;
   background-attachment: fixed;
+  font-family: var(--main-font);
 }
 
 .header {
   height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  color: var(--nav-color);
+  background-color: inherit;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--nav-color);
+  height: 26px;
+  padding: 0px 13px;
+}
+
+.header__rec::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+  /* inline-size: calc(100% + 8px); */
+  block-size: 1px;
+  background-color: var(--accent-color);
+  /* inset-block-end: 0.3ch;
+  inset-inline-start: -4px; */
 }
 
 .header_title {
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   color: #DB00FF;
-  text-shadow: 4px 4px 0px #FF0070;
+  text-shadow: 4px 4px 0px var(--section-heading-color);
   line-height: 82.5%; /* 95.7px */
   font-weight: 700;
+  margin: 279px 224px 114px 0;
+  /* width: 759px; */
 }
 
 .resume {
-  background-color: var(--title-decor);
-  color: var(--second-text-color);
-}
-
-.section_heading {
-  background-color: #FF0070;
-  color: var(--accent-color);
-  font-size: 18px;
+  background-color: var(--accent-color);
   font-weight: 700;
-  line-height: 23.4px; /* 130% */
-}
-
-.heading {
-  color: #FF0070;
-  font-size: 18px;
-  line-height: 23.4px; /* 130% */
-  font-weight: 700;
+  color: var(--main-heading-color);
+  width: 491px;
+  /* margin-block-end: 134px;
+  margin-left: 513px; */
+  float: right;
 }
 
 .why {
-  margin: 0 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  grid-template-columns: 315px 2fr;
+  gap: 10px;
 }
 
-.what {
-  display: grid;
-  /* grid-template-columns: 1fr 2fr; */
-
+.section_heading {
+  background-color: var(--section-heading-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  color: var(--main-heading-color);
+  margin-block-start: 20px;
 }
+
+.heading {
+  color: var(--section-heading-color);
+  font-size: 18px;
+  line-height: 23.4px; /* 130% */
+  font-weight: 700;
+  margin-block-start: 20px;
+  width: 315px;
+}
+
+/* .what {
+} */
 
 .what_section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 315px 315px 315px;
   gap: 20px;
 }
 
 .how-to {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* grid-template-rows: repeat(4, 1fr); */
-  /* display: flex;
-  align-items: baseline; */
   grid-template-columns: 1fr 2fr;
-  /* gap: 20px; */
 }
 
-/* .how-to_section {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-
-} */
-
 .subtitle {
-  background-color: #FF0070;
-  color: var(--accent-color);
+  background-color: var(--section-heading-color);
+  color: var(--main-heading-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
+  margin-block-start: 20px;
 }
 
 .pictures {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  /* grid-template-rows: repeat(auto-fit, 1fr); */
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+  /* grid-template-columns: repeat(auto-fit, 1fr); */
+  grid-template-rows: repeat(auto-fit, 1fr);
   gap: 20px;
   grid-auto-flow: dense;
 }
 
-.footer {
-  height: 100vh;
+@media (max-width: 1024px) and (min-width:768px) {
+  body,html {
+      font-size: 1.111vw;
+  }
 }
+
+/* .footer {
+  height: 100vh;
+  display: flex;
+width: 1024px;
+height: 768px;
+  padding: 20px;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+gap: 10px;
+} */
