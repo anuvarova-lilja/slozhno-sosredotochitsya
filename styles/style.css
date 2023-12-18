@@ -24,6 +24,7 @@
   box-sizing: border-box;
   background-attachment: fixed;
   font-family: var(--main-font);
+  display: flex;
 }
 
 .header {
@@ -89,7 +90,7 @@
 
 .why {
   display: grid;
-  grid-template-columns: 315px 2fr;
+  grid-template-columns: 1fr 2fr;
   gap: 10px;
 }
 
@@ -116,7 +117,7 @@
 
 .what_section {
   display: grid;
-  grid-template-columns: 315px 315px 315px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -149,14 +150,8 @@
   }
 }
 
-/* .footer {
+.footer {
   height: 100vh;
   display: flex;
-width: 1024px;
-height: 768px;
-  padding: 20px;
-flex-direction: column;
-  justify-content: center;
-  align-items: center;
-gap: 10px;
-} */
+  margin: auto;
+}
