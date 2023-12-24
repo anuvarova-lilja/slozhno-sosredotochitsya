@@ -80,7 +80,7 @@
   width: 491px;
   margin: 114px 0 0 513px;
   align-self: center;
-  margin-block-start: 87px;
+  margin-block-start: 85px;
 }
 
 .why {
@@ -224,5 +224,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
 }
