@@ -71,8 +71,6 @@
   text-shadow: 4px 4px 0px var(--section-heading-color);
   line-height: 82.5%; /* 95.7px */
   font-weight: 700;
-  /* margin: 250px 0 114px 0;
-  text-align: left; */
 }
 
 .resume {
@@ -80,7 +78,7 @@
   font-weight: 700;
   color: var(--main-heading-color);
   width: 491px;
-  margin: 114px 0 114px 513px;
+  margin: 114px 0 0 513px;
   align-self: center;
   margin-block-start: 85px;
 }
@@ -101,7 +99,6 @@
   color: var(--main-heading-color);
   margin-block-start: 20px;
   margin-block-end: 10px;
-  padding: 0 20px;
 }
 
 .article {
