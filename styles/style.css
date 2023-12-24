@@ -72,14 +72,15 @@
   font-weight: 700;
   color: var(--main-heading-color);
   width: 491px;
-  margin-left: 513px; */
-  /* float: right; */
+  margin-left: 513px;
 }
 
 .why {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
+  height: 100vh;
+
 }
 
 .section_heading {
@@ -100,8 +101,10 @@
   width: 315px;
 }
 
-/* .what {
-} */
+.what {
+  height: 100vh;
+
+}
 
 .what_section {
   display: grid;
@@ -112,6 +115,8 @@
 .how-to {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  height: 100vh;
+
 }
 
 .subtitle {
@@ -124,7 +129,8 @@
 }
 
 .pictures {
- padding-top: 20px;
+  height: 100vh;
+  padding-top: 20px;
   display: grid;
   gap: 20px;
   box-sizing: border-box;
@@ -186,6 +192,8 @@
 
 .footer {
   height: 100vh;
-  /* display: flex; */
-  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto auto; */
 }
