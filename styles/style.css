@@ -14,7 +14,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   min-width: 375px;
   margin: 0;
-  padding: 20px;
+  /* padding: 20px; */
   background-image: url("/images/cover-image-dark.png");
   background-size: cover;
   color: var(--main-text-color);
@@ -49,6 +49,10 @@
   padding: 0px 13px;
 }
 
+.header__rec {
+  position: relative;
+}
+
 .header__rec::after {
   content: '';
   position: absolute;
@@ -64,7 +68,8 @@
   text-shadow: 4px 4px 0px var(--section-heading-color);
   line-height: 82.5%; /* 95.7px */
   font-weight: 700;
-  margin: 279px 224px 114px 0;
+  margin: 270px 0 114px 0;
+  text-align: left;
 }
 
 .resume {
@@ -79,6 +84,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
+  padding: 0 20px;
 }
 
 .section_heading {
@@ -88,6 +94,8 @@
   line-height: 23.4px; /* 130% */
   color: var(--main-heading-color);
   margin-block-start: 20px;
+  margin-block-end: 5px;
+
 }
 
 .heading {
@@ -99,18 +107,29 @@
   width: 315px;
 }
 
-/* .what {
-} */
+.what {
+  padding: 0 20px;
+  margin-block-start: 80px;
+
+}
 
 .what_section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+
 }
 
 .how-to {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding: 0 20px;
+  margin-block-start: 40px;
+  margin-block-end: 55px;
+}
+
+.how-to_section {
+  padding: 0 10px;
 }
 
 .subtitle {
@@ -119,11 +138,12 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
-  margin-block-start: 20px;
+  margin-block-start: 25px;
+  margin-block-end: 5px;
 }
 
 .pictures {
- padding-top: 20px;
+  padding: 0 20px;
   display: grid;
   gap: 20px;
   box-sizing: border-box;
