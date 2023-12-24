@@ -82,7 +82,7 @@
   width: 491px;
   margin-left: 513px;
   align-self: center;
-  margin-block-start: 20px;
+  margin-block-start: 40px;
 }
 
 .why {
@@ -100,7 +100,7 @@
   line-height: 23.4px; /* 130% */
   color: var(--main-heading-color);
   margin-block-start: 20px;
-  margin-block-end: 5px;
+  /* margin-block-end: 5px; */
 }
 
 .article {
