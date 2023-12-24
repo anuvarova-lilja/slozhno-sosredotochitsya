@@ -82,7 +82,7 @@
   width: 491px;
   margin-left: 513px;
   align-self: center;
-  margin-block-start: 80px;
+  margin-block-start: 75px;
 }
 
 .why {
@@ -104,6 +104,7 @@
 }
 
 .article {
+  margin-block-start: 10px;
   line-height: 23.4px; /* 130% */
 }
 
