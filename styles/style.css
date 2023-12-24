@@ -82,6 +82,7 @@
   width: 491px;
   margin-left: 513px;
   align-self: center;
+  margin-block-start: 20px;
 }
 
 .why {
@@ -96,11 +97,14 @@
   background-color: var(--section-heading-color);
   font-size: 18px;
   font-weight: 700;
-  line-height: 25.4px; /* 130% */
+  line-height: 23.4px; /* 130% */
   color: var(--main-heading-color);
   margin-block-start: 20px;
   margin-block-end: 5px;
+}
 
+.article {
+  line-height: 23.4px; /* 130% */
 }
 
 .heading {
