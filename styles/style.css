@@ -80,7 +80,7 @@
   width: 491px;
   margin: 114px 0 0 513px;
   align-self: center;
-  margin-block-start: 90px;
+  margin-block-start: 87px;
 }
 
 .why {
@@ -155,6 +155,7 @@
 
 .article_pictures {
   padding: 0 20px;
+  margin-bottom: 50px;
 }
 
 .pictures {
