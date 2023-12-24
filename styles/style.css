@@ -153,6 +153,10 @@
   margin-block-end: 10px;
 }
 
+.article_pictures {
+  padding: 0 20px;
+}
+
 .pictures {
   padding: 0 20px;
   display: grid;
