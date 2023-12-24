@@ -80,7 +80,7 @@
   font-weight: 700;
   color: var(--main-heading-color);
   width: 491px;
-  margin-left: 513px;
+  margin: 114px 0 114px 513px;
   align-self: center;
   margin-block-start: 85px;
 }
@@ -101,6 +101,7 @@
   color: var(--main-heading-color);
   margin-block-start: 20px;
   margin-block-end: 10px;
+  padding: 0 20px;
 }
 
 .article {
