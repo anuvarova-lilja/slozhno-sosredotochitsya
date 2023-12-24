@@ -12,7 +12,7 @@
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  min-inline-size: 375px;
+  min-width: 375px;
   margin: 0;
   padding: 20px;
   background-image: url("/images/cover-image-dark.png");
@@ -24,17 +24,10 @@
   box-sizing: border-box;
   background-attachment: fixed;
   font-family: var(--main-font);
-  display: flex;
 }
 
 .header {
   height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
 }
 
 .header__theme-menu-list {
@@ -61,11 +54,8 @@
   position: absolute;
   z-index: -1;
   display: block;
-  /* inline-size: calc(100% + 8px); */
   block-size: 1px;
   background-color: var(--accent-color);
-  /* inset-block-end: 0.3ch;
-  inset-inline-start: -4px; */
 }
 
 .header_title {
@@ -75,7 +65,6 @@
   line-height: 82.5%; /* 95.7px */
   font-weight: 700;
   margin: 279px 224px 114px 0;
-  /* width: 759px; */
 }
 
 .resume {
@@ -83,9 +72,8 @@
   font-weight: 700;
   color: var(--main-heading-color);
   width: 491px;
-  /* margin-block-end: 134px;
   margin-left: 513px; */
-  float: right;
+  /* float: right; */
 }
 
 .why {
@@ -136,22 +124,68 @@
 }
 
 .pictures {
+ padding-top: 20px;
   display: grid;
-  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
-  /* grid-template-columns: repeat(auto-fit, 1fr); */
-  grid-template-rows: repeat(auto-fit, 1fr);
   gap: 20px;
-  grid-auto-flow: dense;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  align-content: stretch;
+  align-items: stretch;
+  justify-items: stretch;
 }
 
-@media (max-width: 1024px) and (min-width:768px) {
-  body,html {
-      font-size: 1.111vw;
+.picture-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.picture-2 {
+  object-fit: cover;
+  object-position: center center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.picture-3 {
+  object-fit: cover;
+  object-position: center center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.picture-4 {
+  object-fit: fill;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.picture-5 {
+  object-fit: fill;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+@media (max-width: 1024px) {
+  .pictures {
+      
   }
 }
 
 .footer {
   height: 100vh;
-  display: flex;
-  margin: auto;
+  /* display: flex; */
+  margin: auto auto;
 }
