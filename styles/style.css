@@ -79,8 +79,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
-  height: 100vh;
-
 }
 
 .section_heading {
@@ -101,10 +99,8 @@
   width: 315px;
 }
 
-.what {
-  height: 100vh;
-
-}
+/* .what {
+} */
 
 .what_section {
   display: grid;
@@ -115,8 +111,6 @@
 .how-to {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 100vh;
-
 }
 
 .subtitle {
@@ -129,8 +123,7 @@
 }
 
 .pictures {
-  height: 100vh;
-  padding-top: 20px;
+ padding-top: 20px;
   display: grid;
   gap: 20px;
   box-sizing: border-box;
