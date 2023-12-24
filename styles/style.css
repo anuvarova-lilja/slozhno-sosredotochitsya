@@ -108,6 +108,10 @@
   line-height: 23.4px; /* 130% */
 }
 
+.text_paraghraph {
+  line-height: 23.4px; /* 130% */
+}
+
 .heading {
   color: var(--section-heading-color);
   font-size: 18px;
