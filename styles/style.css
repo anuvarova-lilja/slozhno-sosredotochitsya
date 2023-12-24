@@ -28,6 +28,8 @@
 
 .header {
   height: 100vh;
+  display: grid;
+  grid-template-rows: 319px 71px 319px;
 }
 
 .header__theme-menu-list {
@@ -51,7 +53,7 @@
 }
 
 .header__rec {
-  position: relative;
+  position: absolute;
 }
 
 .header__rec::after {
@@ -69,8 +71,8 @@
   text-shadow: 4px 4px 0px var(--section-heading-color);
   line-height: 82.5%; /* 95.7px */
   font-weight: 700;
-  margin: 250px 0 114px 0;
-  text-align: left;
+  /* margin: 250px 0 114px 0;
+  text-align: left; */
 }
 
 .resume {
@@ -79,6 +81,7 @@
   color: var(--main-heading-color);
   width: 491px;
   margin-left: 513px;
+  align-self: flex-end;
 }
 
 .why {
