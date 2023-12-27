@@ -85,7 +85,7 @@
   width: 491px;
   margin: 114px 0 0 513px;
   align-self: baseline;
-  margin-block-start: 85px;
+  /* margin-block-start: 85px; */
 }
 
 .why {
