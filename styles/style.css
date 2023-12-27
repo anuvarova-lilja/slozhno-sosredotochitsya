@@ -14,7 +14,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   min-width: 375px;
   margin: 0;
-  /* padding: 20px; */
   background-image: url("/images/cover-image-dark.png");
   background-size: cover;
   color: var(--main-text-color);
@@ -53,9 +52,9 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--nav-color);
-  height: 26px;
-  /* padding: 0px 13px; */
-  outline-offset: 5px;
+  /* height: 26px; */
+  padding: 0px 13px;
+  /* outline-offset: 5px; */
 }
 
 .header__rec {
@@ -85,7 +84,7 @@
   color: var(--main-heading-color);
   width: 491px;
   margin: 114px 0 0 513px;
-  align-self: center;
+  align-self: baseline;
   margin-block-start: 85px;
 }
 
