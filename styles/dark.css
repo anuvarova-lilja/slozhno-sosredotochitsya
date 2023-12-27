@@ -19,19 +19,25 @@
   background-image: url(/images/cover-image-dark.png);
 }
 
-.theme_dark .header__rec {
-  display: block;
-  padding-right: 48px;
+
+.header__rec {
+  position: absolute;
   color: var(--accent-color);
-  text-align: right;
-  line-height: 25px; /* 138.889% */
+  right: 48px;
+  top: 20px;
 }
 
-/* .theme_dark .header__theme-menu-button_active {
-  border: 1px solid var(--nav-color);
-  height: 26px;
-  padding: 0px 13px;
-} */
+.header__rec::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  z-index: -1;
+  block-size: 30px;
+  background-color: var(--accent-color);
+  box-shadow: -5px -10px 20px #ff0070;
+  block-size: 0.5ch;
+}
 
 .theme_dark .header__theme-menu-button:hover {
   --nav-hover-color: rgb(255 0 112 / 0.4);
