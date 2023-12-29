@@ -93,7 +93,7 @@
   .why {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
@@ -110,6 +110,8 @@
 .article {
   margin-block-start: 40px;
 }
+
+
 
 .text_paraghraph {
   line-height: 23.4px; /* 130% */
@@ -154,6 +156,12 @@
   margin-block-start: 80px;
 }
 
+@media (width < 376px) {
+  .what {
+    padding: 0 10px;
+  }
+}
+
 .text-blocks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -181,7 +189,7 @@
   .how-to {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
@@ -204,6 +212,12 @@
   margin-bottom: 50px;
 }
 
+@media (width < 376px) {
+  .article_pictures {
+    padding: 0 10px;
+  }
+}
+
 .pictures {
   padding: 10px 0;
   display: grid;
@@ -216,6 +230,7 @@
   .pictures {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -280,4 +295,10 @@
   left: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
+}
+
+@media (width < 376px) {
+  .article {
+    margin-block-start: 20px;
+  }
 }
