@@ -93,7 +93,7 @@
   .why {
     display: flex;
     flex-wrap: wrap;
-    gap: 0;
+    padding: 0;
   }
 }
 
@@ -174,14 +174,14 @@
   padding: 0 clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
   margin-block-start: 60px;
   margin-block-end: 80px;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 @media (width < 376px) {
   .how-to {
     display: flex;
     flex-wrap: wrap;
-    gap: 0;
+    padding: 0;
   }
 }
 
