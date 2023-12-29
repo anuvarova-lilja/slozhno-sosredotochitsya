@@ -135,6 +135,12 @@
   max-width: 315px;
 }
 
+@media (width < 769px) {
+  .heading {
+    max-width: 236px;
+  }
+}
+
 .what {
   padding: 0 20px;
   margin-block-start: 80px;
@@ -146,8 +152,8 @@
   gap: 20px;
 }
 
-@media (width < 769) {
-  .what {
+@media (width < 769px) {
+  .text-blocks {
     display: flex;
     flex-wrap: wrap;
   }
