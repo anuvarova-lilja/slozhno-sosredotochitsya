@@ -30,7 +30,7 @@
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   position: relative;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .header__theme-menu-list {
@@ -89,7 +89,7 @@
   padding: 0 20px;
 }
 
-@media (width < 769px) {
+@media (width < 376px) {
   .why {
     display: flex;
     flex-wrap: wrap;
@@ -177,7 +177,7 @@
   gap: 20px;
 }
 
-@media (width < 769px) {
+@media (width < 376px) {
   .how-to {
     display: flex;
     flex-wrap: wrap;
