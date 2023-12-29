@@ -85,7 +85,7 @@
 .why {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 15px;
+  gap: 20px;
   padding: 0 20px;
 }
 
@@ -95,6 +95,7 @@
     flex-wrap: wrap;
     padding: 0 10px;
     gap: 0;
+    margin-block-end: 50px;
   }
 }
 
@@ -143,7 +144,7 @@
   line-height: 23.4px; /* 130% */
   font-weight: 700;
   margin-block-start: 20px;
-  max-width: clamp(19.6875rem, 34.5rem + -30.8594vw, 14.75rem);
+  max-width: clamp(14.75rem, -0.0625rem + 30.8594vw, 19.6875rem);
 }
 
 @media (width < 376px) {
@@ -192,6 +193,7 @@
     flex-wrap: wrap;
     padding: 0 10px;
     gap: 0;
+    margin-block-end: 50px;
   }
 }
 
