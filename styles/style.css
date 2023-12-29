@@ -77,7 +77,7 @@
   background-color: var(--accent-color);
   font-weight: 700;
   color: var(--main-heading-color);
-  max-width: 491px;
+  width: clamp(22.75rem, -1.0625rem + 49.6094vw, 30.6875rem);
   justify-self: end;
   align-self: center;
 }
