@@ -132,6 +132,7 @@
   line-height: 23.4px; /* 130% */
   font-weight: 700;
   margin-block-start: 20px;
+  max-width: 315px;
 }
 
 .what {
