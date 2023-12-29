@@ -36,7 +36,7 @@
   block-size: 30px;
   background-color: var(--accent-color);
   box-shadow: -5px -10px 20px #ff0070;
-  block-size: 0.5ch;
+  /* block-size: 0.5ch; */
 }
 
 .theme_dark .header__theme-menu-button:hover {
