@@ -94,6 +94,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 10px;
+    gap: 0;
   }
 }
 
@@ -190,6 +191,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 10px;
+    gap: 0;
   }
 }
 
