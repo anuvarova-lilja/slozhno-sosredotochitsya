@@ -69,8 +69,8 @@
   font-weight: 700;
   color: var(--main-heading-color);
   max-width: 491px;
-  margin: 114px 0 0 513px;
-  align-self: baseline;
+  justify-self: end;
+  align-self: center;
 }
 
 .decorated-zone::after {
@@ -236,7 +236,7 @@
   grid-row-end: 4;
 }
 
-@media (max-width: 375px) {
+@media (width < 375px) {
   .header_title {
       font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
