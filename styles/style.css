@@ -132,7 +132,6 @@
   line-height: 23.4px; /* 130% */
   font-weight: 700;
   margin-block-start: 20px;
-  width: 315px;
 }
 
 .what {
@@ -146,9 +145,10 @@
   gap: 20px;
 }
 
-@media (width < 768) {
-  .text-blocks {
-    grid-template-columns: none;
+@media (width < 769) {
+  .what {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
