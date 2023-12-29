@@ -155,9 +155,9 @@
 
 }
 
-.what_section {
+.text-blocks {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 
 }
@@ -194,8 +194,9 @@
   display: grid;
   gap: 20px;
   overflow: hidden;
-  /* align-content: stretch; */
   align-items: stretch;
+  /* align-content: stretch; */
+  
   /* justify-items: stretch; */
 }
 /* 
