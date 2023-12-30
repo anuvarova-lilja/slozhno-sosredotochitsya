@@ -8,12 +8,10 @@
   --main-heading-color: #00183f;
   --section-heading-color: #ff0070;
   --logo-color: #db00ff;
-
+  --header-title-shadow: #ff0070;
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  min-width: 375px;
-  margin: 0;
   background-image: url(../images/cover-image-dark.png);
   background-size: cover;
   color: var(--main-text-color);
@@ -44,14 +42,6 @@
   gap: 36px;
 }
 
-@media (width < 769px) {
-  .header__theme-menu-list {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 36px;
-  }
-}
-
 .header__theme-menu-button {
   text-transform: lowercase;
   color: var(--nav-color);
@@ -72,9 +62,10 @@
 .header_title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   color: var(--logo-color);
-  text-shadow: 4px 4px 0px var(--section-heading-color);
+  text-shadow: 4px 4px 0px var(--header-title-shadow);
   line-height: 82.5%; /* 95.7px */
   font-weight: 700;
+  margin-left: -20px;
 }
 
 .resume {
@@ -91,16 +82,6 @@
   grid-template-columns: 1fr 2fr;
   gap: 15px;
   padding: 0 20px;
-}
-
-@media (width < 376px) {
-  .why {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px;
-    gap: 0;
-    margin-block-end: 50px;
-  }
 }
 
 .section_heading {
@@ -122,7 +103,7 @@
 }
 
 .link {
-  text-shadow: 2px 2px 0 var(--section-heading-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
 }
 
@@ -149,37 +130,15 @@
   max-width: clamp(14.75rem, -0.0625rem + 30.8594vw, 19.6875rem);
 }
 
-@media (width < 376px) {
-  .heading {
-    max-width: 355px;
-    margin-block-start: 0;
-  }
-}
-
 .what {
   padding: 0 20px;
   margin-block-start: 80px;
-}
-
-@media (width < 376px) {
-  .what {
-    padding: 0 10px;
-    margin-block-start: 0;
-  }
 }
 
 .text-blocks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
-
-@media (width < 769px) {
-  .text-blocks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-  }
 }
 
 .how-to {
@@ -189,21 +148,6 @@
   margin-block-start: 60px;
   margin-block-end: 80px;
   gap: 16px;
-}
-
-@media (width < 376px) {
-  .how-to {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px;
-    gap: 0;
-    margin-block-end: 50px;
-    margin-block-start: 0;
-  }
-}
-
-.how-to_section {
-  /* padding-left: 5px; */
 }
 
 .subtitle {
@@ -221,27 +165,12 @@
   margin-bottom: 50px;
 }
 
-@media (width < 376px) {
-  .article_pictures {
-    padding: 0 10px;
-  }
-}
-
 .pictures {
   padding: 10px 0;
   display: grid;
   gap: 20px;
   overflow: hidden;
   align-items: stretch;
-}
-
-@media (width < 376px) {
-  .pictures {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-  }
 }
 
 .grid__image {
@@ -272,12 +201,6 @@
   grid-column: 2 / span 2;
  }
 
-@media (width < 375px) {
-  .header_title {
-      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-}
-
 .footer {
   height: 100vh;
   display: flex;
@@ -307,8 +230,67 @@
   border-left: 1px solid var(--accent-color);
 }
 
+@media (width < 769px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 36px;
+  }
+  .header__theme-menu {
+    place-self: center;
+    justify-self: end;
+  }
+  .text-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+
+
 @media (width < 376px) {
+  .header_title {
+      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
   .article {
     margin-block-end: 50px;
+  }
+  .header {
+    padding: 10px;
+  }
+  .why {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    gap: 0;
+    margin-block-end: 50px;
+  }
+  .header_title {
+    margin-left: 0;
+  }
+  .heading {
+    max-width: 355px;
+    margin-block-start: 0;
+  }
+  .what {
+    padding: 0 10px;
+    margin-block-start: 0;
+  }
+  .how-to {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    gap: 0;
+    margin-block-end: 50px;
+    margin-block-start: 0;
+  }
+  .article_pictures {
+    padding: 0 10px;
+  }
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
   }
 }
