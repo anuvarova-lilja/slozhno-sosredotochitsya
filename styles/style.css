@@ -14,7 +14,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   min-width: 375px;
   margin: 0;
-  background-image: url("/images/cover-image-dark.png");
+  background-image: url(../images/cover-image-dark.png);
   background-size: cover;
   color: var(--main-text-color);
   overflow-x: hidden;
