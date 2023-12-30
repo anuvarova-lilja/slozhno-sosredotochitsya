@@ -118,8 +118,6 @@
   margin-block-start: 40px;
 }
 
-
-
 .text_paraghraph {
   line-height: 23.4px; /* 130% */
 }
@@ -312,7 +310,6 @@
 
 @media (width < 376px) {
   .article {
-    /* margin-block-start: 20px; */
     margin-block-end: 50px;
   }
 }
