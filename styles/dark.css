@@ -16,7 +16,7 @@
   --main-heading-color: #00183f;
   --section-heading-color: #ff0070;
   --logo-color: #db00ff;
-  background-image: url(/images/cover-image-dark.png);
+  background-image: url("/images/cover-image-dark.png");
 }
 
 
