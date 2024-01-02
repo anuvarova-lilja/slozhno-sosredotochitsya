@@ -3,6 +3,11 @@
   и их переопределение под различные устройства
 */
 :root {
-  --title-decor: rgba(255, 0, 112, 1.00);
-  --second-text-color: rgba(0, 0, 40, 1);
+  --main-font: 'IBM Plex mono', sans-serif;
+  --bg-color: #ff0070;
+  --main-text-color: #f1b2ce;
+  --nav-color: #ff0070;
+  --section-heading-color: #ff0070;
+  --title-color: #db00ff;
+  --shadow-color: #ff0070;
 }

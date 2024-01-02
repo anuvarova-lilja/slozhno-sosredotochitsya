@@ -1,15 +1,14 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 :root {
   --main-font: 'IBM Plex mono', sans-serif;
-  --accent-color: #ff0070;
-  --main-bg-color: #00183f;
+  --bg-color: #ff0070;
   --main-text-color: #f1b2ce;
   --nav-color: #ff0070;
-  --main-heading-color: #00183f;
   --section-heading-color: #ff0070;
-  --logo-color: #db00ff;
-  --header-title-shadow: #ff0070;
+  --title-color: #db00ff;
+  --shadow-color: #ff0070;
 }
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
@@ -250,7 +249,8 @@
 
 @media (width < 376px) {
   .header_title {
-      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-left: 0;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
   .article {
     margin-block-end: 50px;
@@ -264,9 +264,6 @@
     padding: 0 10px;
     gap: 0;
     margin-block-end: 50px;
-  }
-  .header_title {
-    margin-left: 0;
   }
   .heading {
     max-width: 355px;
