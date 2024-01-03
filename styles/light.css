@@ -4,14 +4,16 @@
   переключая тему
 */
 
-:root {
+ :root {
   --main-font: 'IBM Plex mono', sans-serif;
   --bg-color: #ff8dcb;
   --main-text-color: #353430;
   --nav-color: #353430;
   --section-heading-color: #353430;
-  --title-color: #ffc2e2;
+  --logo-color: #ffc2e2;
   --shadow-color: #ff0070;
+  --header-title-shadow: #ff0070;
+
 }
 
 .page.theme_light {
@@ -24,4 +26,4 @@
 
 .header__rec {
   display: none;
-}
+} 
