@@ -13,35 +13,17 @@
   --main-bg-color: #00183f;
   --main-text-color: #f1b2ce;
   --nav-color: #ff0070;
-  --main-heading-color: #00183f;
+  --main-heading-color: #000028;
   --section-heading-color: #ff0070;
   --logo-color: #db00ff;
   --header-title-shadow: #ff0070;
-  background-image: url(../images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
 }
 
-
-.header__rec {
-  position: absolute;
-  color: var(--accent-color);
-  right: 48px;
-  top: 20px;
-}
-
-.header__rec::after {
-  content: '';
+.header__rec.theme_dark {
   display: block;
-  border-radius: 50%;
-  position: relative;
-  z-index: -1;
-  bottom: 26px;
-  left: 30px;
-  scale: 40%;
-  block-size: 30px;
-  background-color: var(--accent-color);
-  box-shadow: 0px 0px 20px #ff0070;
-}
+} 
 
-.theme_dark .header__theme-menu-button:hover {
+/* .theme_dark .header__theme-menu-button:hover {
   --nav-hover-color: rgb(255 0 112 / 0.4);
-}
+} */
