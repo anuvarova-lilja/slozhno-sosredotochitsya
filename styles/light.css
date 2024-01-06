@@ -25,7 +25,7 @@
   --background-image: url(../images/cover-image-light.png);
 }
 
-.header__rec {
+.header__rec.theme_light {
   display: none;
 } 
 
@@ -45,5 +45,5 @@
 
   .header__rec {
     display: none;
-  } 
+  }
 }
