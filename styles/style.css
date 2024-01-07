@@ -36,11 +36,11 @@
   color: var(--nav-color);
   background-color: inherit;
   border: none;
+    padding-inline: 25px;
 }
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--nav-color);
-  padding: 0px 13px;
 }
 
 .header__theme-menu-button:hover {
@@ -120,13 +120,11 @@
 }
 
 .link:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--main-text-color);
   cursor: pointer;
+  border-block-end: 1px solid;
 }
 
 .link:focus {
-  /* outline: 1px solid var(--main-text-color); */
   outline: none;
 }
 
@@ -219,6 +217,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .footer_title {
