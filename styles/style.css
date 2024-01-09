@@ -29,7 +29,7 @@
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
-  gap: 36px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -65,8 +65,8 @@
   display: block;
   position: absolute;
   color: var(--nav-color);
-  right: 48px;
-  top: 20px;
+  right: clamp(2.375rem, 2.0139rem + 1.5408vw, 3rem);
+  top: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
   text-transform: uppercase;
 }
 
