@@ -20,6 +20,6 @@
   --background-image: url(../images/cover-image-dark.png);
 }
 
-.header__rec.theme_dark {
+.theme_dark .header__rec {
   display: block;
 } 

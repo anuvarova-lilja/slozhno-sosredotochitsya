@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--background-image);
+  background-position: center;
   background-size: cover;
   color: var(--main-text-color);
   font-size: 18px;
@@ -41,11 +42,23 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--nav-color);
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--nav-color);
   cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  cursor: pointer;
+  border-block-end: 1px solid;
 }
 
 .header__rec {
@@ -269,7 +282,7 @@
   }
 }
 
-@media (375px <= width <= 767px), (width < 375px) {
+@media (width <= 767px) {
   .header_title {
     margin-left: 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
